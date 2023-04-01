@@ -1,39 +1,50 @@
 <!DOCTYPE html>
 
 <html lang="en">
-
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
         <title>Z3roKwq bio</title>
+
         <link rel="icon" href="assets/images/b-logo.png"/>
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/preloader.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
 
     <body>
-        <div class="main">
-            <div class="container main-container">
-                <div class="main-img-box">
-                    <img class="main-img-box_img" src="assets/images/avatar.png" alt="">
-                </div>
-                
-                <div class="main-about-box">
-                    <h1 class="main-about_title">I'm Z3roKwq</h1><!--Веб-разработчик-->
-                    <!--<h2 class="main-about_subtitle">Сергей петров</h2>-->
-                    <p class="main-about_description">Hi, I am programming in C++ and Lua, on this site you can learn more about me and my projects.</p><!--Привет, я занимаюсь версткой адаптивных сайтов по макету. Пишите для сотрудничества.-->
-                    <div class="main-links-box">
-                        <a class="main-links-link" href="#"><i class='bx bxl-vk'></i></a>
-                        <a class="main-links-link" href="#"><i class='bx bxl-telegram'></i></a>
-                        <a class="main-links-link" href="#"><i class='bx bxl-github'></i></a>
-                        <a class="main-links-link" href="#"><img src="assets/icons/blasthack-icon-normal.svg" onmouseout="this.src='assets/icons/blasthack-icon-normal.svg';" onmouseover="this.src='assets/icons/blasthack-icon-selected.svg';" style="height: 31px; width: 31px;"></img></a>
-                        <a class="main-links-link" href="#"><img src="assets/icons/yandex_music-normal.svg" onmouseout="this.src='assets/icons/yandex_music-normal.svg';" onmouseover="this.src='assets/icons/yandex_music-selected.svg';" style="height: 25px; width: 25px;"></img></a>
+        <div id="preloader" class="preloader">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div id="preload-particle" class="hidden"></div>
+        <div id="main" class="hidden">
+            <!--<div class="main">-->
+                <div class="container main-container">
+                    <div class="main-img-box">
+                        <img class="main-img-box_img" src="assets/images/avatar.png" alt="">
+                    </div>
+                    <div class="main-about-box">
+                        <h1 class="main-about_title">I'm Z3roKwq</h1>
+                        <!--<h2 class="main-about_subtitle"></h2>-->
+                        <p class="main-about_description">Hi, I am programming in C++ and Lua, on this site you can learn more about me and my projects.</p>
+                        <div class="main-links-box">
+                            <a class="main-links-link" href="https://vk.com/prosta_alexey" target="_blank"><i class='bx bxl-vk'></i></a>
+                            <a class="main-links-link" href="https://t.me/imperatorSMACK" target="_blank"><i class='bx bxl-telegram'></i></a>
+                            <a class="main-links-link" href="https://github.com/Z3roKwq-1" target="_blank"><i class='bx bxl-github'></i></a>
+                            <a class="main-links-link" href="https://www.blast.hk/members/461373" target="_blank"><img src="assets/icons/blasthack-icon-normal.svg" onmouseout="this.src='assets/icons/blasthack-icon-normal.svg';" onmouseover="this.src='assets/icons/blasthack-icon-selected.svg';" style="height: 31px; width: 31px;"></img></a>
+                            <a class="main-links-link" href="https://music.yandex.ru/users/aleksej.shabardin/playlists" target="_blank"><img src="assets/icons/yandex_music-normal.svg" onmouseout="this.src='assets/icons/yandex_music-normal.svg';" onmouseover="this.src='assets/icons/yandex_music-selected.svg';" style="height: 25px; width: 25px;"></img></a>
+                        </div>
                     </div>
                 </div>
-            </div>
+            <!--</div>-->
         </div>
+        <script src="js/preloader.js"></script>
     </body>
 </html>
