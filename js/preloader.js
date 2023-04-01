@@ -1,6 +1,11 @@
+if (document.documentElement.getAttribute('data-darkreader-scheme') == 'dark') {
+    document.querySelector("#blasthk").src = "assets/icons/blasthack-icon-light.svg";
+    document.querySelector("#ya-mus").src = "assets/icons/yandex_music-light.svg";
+}
+
 function loadData() {
     return new Promise((resolve, reject) => {
-        setTimeout(resolve, 3000);
+        setTimeout(resolve, 2000);
     })
 };
 
