@@ -1,6 +1,6 @@
 function loadData() {
     return new Promise((resolve, reject) => {
-        setTimeout(resolve, 1500);
+        setTimeout(resolve, 3000);
     })
 };
 
@@ -14,14 +14,4 @@ loadData().then(() => {
     let particlesEl = document.getElementById('preload-particle');
     particlesEl.classList.add('visible');
     particlesEl.classList.remove('hidden');
-});
-
-$('.time-slow').on('click', function(e) {
-    e.preventDefault();
-    var 
-       href = $(this).attr('href'),
-       timeout = 500;
-    setTimeout(function() {
-       location.href = href;
-    }, timeout);
 });
